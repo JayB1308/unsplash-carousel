@@ -1,0 +1,101 @@
+.card{
+    height: 325px;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    box-shadow: 2px 3px 10px #E6EAF2;
+    pointer-events: none;
+}
+
+.regular{
+    background-image: linear-gradient(45deg, white 0%, #96e6a1 100%);
+ 
+}
+
+.wide{
+    background-image: linear-gradient(45deg, white 0%, #E0C3FC 100%);
+
+}
+
+.narrow{
+    background-image: linear-gradient(45deg, white 0%, #FFFB7D 100%);
+}
+
+
+.wide_image img{
+    width:500px;
+}
+
+.narrow_image img{
+    width:200px;
+}
+
+.regular_image img{
+    width:250px
+}
+
+.card .card-image img{
+    width: 250px;
+    height: 250px;
+    padding: 1rem;
+    /* border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem; */
+}
+
+.card .card-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+}
+.card .card-body .user-info{
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+    width: 90%;
+}
+
+.card .card-body .user-info .image{
+    width: 20%;
+}
+.card .card-body .user-info .image img{
+    border-radius: 50%;
+}
+
+.card .card-body .user-info .info{
+    font-weight: 700;
+}
+.card .card-body .user-info .info h4{
+    font-size: 0.9rem;
+}
+
+.card .card-body .user-info .info p{
+    font-size: 0.75rem;
+}
+
+.card .card-body .download-info button{
+    border: none;
+    background-color: transparent; 
+    margin-top: 0.75rem;
+}
+.card .card-body .download-info a{
+    color:black;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width:415px) and (min-width:350px)
+{
+    .card{
+        height: 270px;
+        border-radius: 20px;
+        margin-bottom: 2rem;
+        box-shadow: 2px 3px 10px #E6EAF2;
+        pointer-events: none;
+    }
+    .card .card-image img{
+        width: 200px;
+        height: 200px;
+        padding: 1rem;
+    }
+}

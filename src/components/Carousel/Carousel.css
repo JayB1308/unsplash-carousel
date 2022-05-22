@@ -1,0 +1,140 @@
+.carousel{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4rem;
+    align-items: center;
+    gap:2rem;
+}
+
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.top-bar input{
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #e5e5e5;
+}
+
+.search-field{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+}
+.search-field button{
+    display: flex;
+    width:15%;
+    align-items: center;
+    font-size: 1.15rem;
+    border-radius: 1rem;
+    padding: 0.25rem 0.5rem;
+    color: white;
+    border: none;
+    background-color: #166C87;
+}
+
+#search-icon{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.top-bar input::placeholder
+{
+    font-weight: 700;
+}
+.top-bar input:focus
+{
+    outline: none;
+}
+
+#shuffle-button{
+    border: none;
+    background-color: #D0DCE6;
+    color:#4a8ca2;
+    cursor: pointer;
+    font-size: 1.5rem;
+    /* align-self: flex-end; */
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+
+}
+
+.cards
+{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    width: 90%;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    margin-top: 2rem;
+}
+
+.cards::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .cards {
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+  }
+
+.buttons{
+    display: flex;
+    gap: 1.5rem;
+}
+.buttons button{
+    font-size: 0.75rem;
+    font-weight: 700;
+    background-color: #D0DCE6;
+    border: none;
+    color:#4a8ca2;
+    padding: 1rem 0.75rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media (max-width:415px) and (min-width:350px)
+{
+    .top-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap:2rem;
+    }
+    .top-bar .search-field {
+        width: 100%;
+        gap:1rem;
+    }
+    .top-bar input{
+        padding: 0.5rem 2rem;
+        border-radius: 1rem;
+        border: none;
+        width:80%;
+        background-color: #e5e5e5;
+    }
+    .search-field button{
+        display: flex;
+        width:20%;
+        gap:1.5rem;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        border-radius: 1rem;
+        padding: 0.25rem 0.5rem;
+        color: white;
+        border: none;
+        background-color: #166C87;
+    }
+    
+}
